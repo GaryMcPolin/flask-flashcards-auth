@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Update card</h1>
+    <form method="POST">
+        <p>
+            Question:
+            <input type="text" name="question" value="{{ card.question }}">
+        </p>
+        <p>
+            Answer:
+            <input type="text" name="answer" value="{{ card.answer }}">
+        </p>
+        <button type="submit">Update</button>
+    </form>
+{% endblock %}
